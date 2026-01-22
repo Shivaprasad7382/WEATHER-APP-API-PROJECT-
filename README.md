@@ -1,82 +1,52 @@
-# PRODIGY_TrackCode_TaskNumber5
-weather app
-<!DOCTYPE html>
-<html lang="en">
+# 🌦 Weather App (API Project)
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+A responsive **Weather Application** that fetches real-time weather data using the **OpenWeatherMap API**.  
+This project demonstrates API integration, asynchronous JavaScript, and clean UI design.
 
-<body>
-    <div class="container">
-        <div id="weather-container">
-            <h1>Weather App</h1>
-            <div id="weather-info">
-                <!-- Weather information will be displayed here -->
-            </div>
-            <label for="location">Enter Location:</label>
-            <input type="text" id="location" placeholder="City, Country">
-            <button id="weatherButton">Get Weather</button>
+---
 
-        </div>
-    </div>
+## 🚀 Features
 
+- 🔍 Search weather by city name
+- 🌡 Displays temperature in Celsius
+- ☁ Shows weather condition
+- 💧 Humidity information
+- 🌬 Wind speed details
+- 📱 Responsive and user-friendly UI
 
-    <script src="path/to/your/script.js"></script>
+---
 
-</body>
+## 🛠️ Tech Stack
 
-</html>
-//css
-body {
-    background: linear-gradient(to bottom right, #3498db, #2c3e50);
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
+- **HTML5** – Structure  
+- **CSS3** – Styling and responsiveness  
+- **JavaScript (ES6)** – API integration & logic  
+- **OpenWeatherMap API** – Real-time weather data  
 
-.container {
-    text-align: center;
-}
+---
 
-#weather-container {
-    background: linear-gradient(to bottom right, #3498db, #2c3e50);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+## 📂 Project Structure
 
-button {
-    padding: 10px;
-    background-color: #fff;
-    color: #3498db;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-}
+weather-app-api-project/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 
-button:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-//js
-document.addEventListener('DOMContentLoaded', function() {
-    var button = document.getElementById('weatherButton');
+yaml
+Copy code
 
-    if (button) {
-        button.onclick = function() {
-            // Your code here
-        };
-    } else {
-        console.error("Element with id 'weatherButton' not found");
-    }
-});
+---
+
+## 🔧 Setup & Usage
+
+1. Create a free account at  
+   👉 https://openweathermap.org/
+2. Generate your **API key**
+3. Open `script.js` and replace:
+   ```js
+   const apiKey = "YOUR_API_KEY_HERE";
+Open index.html in a browser
+
+Enter a city name and click Search
